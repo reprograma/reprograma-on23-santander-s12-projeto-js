@@ -2,79 +2,98 @@
   <img src="assets/reprograma-fundos-claros.png" alt="logo reprograma" width="500">
 </h1>
 
-# Tema da Aula
+# on23-TodasEmTech-Santander-ProjetoIII
 
-Turma Online 22 - B3 | Back-end | Semana X | 2023 | Professora X
+Esta é a 12ª semana da turma online: Todas em Tech on23 - Front-end, nesta aula do dia 10/06/2023 faremos um projeto utilizando nossos conhecimentos no ES6:
 
-### Instruções
-Antes de começar, vamos organizar nosso setup.
-* Fork esse repositório 
-* Clone o fork na sua máquina (Para isso basta abrir o seu terminal e digitar `git clone url-do-seu-repositorio-forkado`)
-* Entre na pasta do seu repositório (Para isso basta abrir o seu terminal e digitar `cd nome-do-seu-repositorio-forkado`)
-* [Add outras intrucoes caso necessario]
+- Neste projeto, iremos criar uma aplicação que usa a API GitHub para buscar informações da usuária quando um nome de usuária válido é inserido. Nossa aplicação deve exibir avatar, nome de usuário, contagem de seguidores e contagem de repositórios.
+## Apresentação
 
-### Resumo
-O que veremos na aula de hoje?
-* [Tema1](#tema1)
-* [Tema2](#tema2)
-* [Tema3](#tema3)
+### Quem é a professora Lilit?
 
-## Conteúdo
-### Tema1 
-1. [Tópico 1](#topico1)
-2. [Tópico 2](#topico2)
-### Tema2 
-1. [Tópico 3](#topico3)
-   * [Subtópico 1](#subtopico1)
-   * [Subtópico 2](#subtopico2)
-   
-### Tema3
-1. [Tópico 4](#topico4)
+<img src='./assets/lilizona.jpeg' width=500 alt='Selfie da Lilit com cabelos cacheados longos pretos, blusa preta e ao fundo parede clara'>
 
-### Tema1 
+[Lilit Bandeira](https://www.instagram.com/lilitravesti), é uma travesti paraibana residente no São Paulo, trabalho como Software Engineer no Nubank, ex-aluna e professora {reprograma} e professora também no minas programam, estudante de Analise e Desenvolvimento de Sistemas na Mackenzie;
 
-#### Topico1
+#### Contatos
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel, eleifend suscipit nibh. Mauris pharetra dui quis turpis rutrum blandit. Nunc tempor libero tortor, ac commodo erat porttitor ut. Donec vitae orci arcu. Nunc felis mi, maximus a turpis a, mollis pulvinar enim. Vivamus aliquam ante dui, a blandit massa rutrum et. Etiam hendrerit gravida ultrices. Nunc ante massa, dictum eget justo eget, feugiat tincidunt metus.
+- [E-mail](devlilitbandeira@gmail.com)
+- [LinkedIn](https://www.linkedin.com/in/lilitbandeira)
+- [GitHub](https://github.com/lilitbandeira)
 
- #### Topico2
-  - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  - Donec erat mauris, laoreet in tortor vel
-  - Nunc ante massa, dictum eget justo eget, feugiat tincidunt.
+### Quem são as monitoras?
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel, eleifend suscipit nibh. Mauris pharetra dui quis turpis rutrum blandit.
+<img src='./assets/nurugai.jpeg' width=700 alt="personagem nurugai do anime hell's paradise, tem cabelos castanhos e longos e molhados, olhos também castanhos e está de costas sem roupas lavando os cabelos.">
 
-### Tema2
-#### Topico3
-* [Subtópico 1](#subtopico1)
-* [Subtópico 2](#Subtopico2)
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel.
+### Quem são as alunas?
 
-##### Subtopico1
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel.
+<img src='./assets/mahoutsukainoyome.jpeg' width=700 alt='3 personagens do anime Mahoutsukai no Yome.'>
 
-##### Subtopico2
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel.
+## Acordos
 
-### Tema3
-#### Topico4
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel, eleifend suscipit nibh. Mauris pharetra dui quis turpis rutrum blandit. Nunc tempor libero tortor, ac commodo erat porttitor ut. Donec vitae orci arcu. Nunc felis mi, maximus a turpis a, mollis pulvinar enim. Vivamus aliquam ante dui, a blandit massa rutrum et. Etiam hendrerit gravida ultrices.
+- Enviar dúvidas no chat com as monitoras;
+- Levantar a mão sempre que desejar falar, o que pode ser feito a qualquer momento;
+- Manter microfones desligados sempre que alguém estiver falando;
+- Manter as câmeras ligadas o máximo de tempo possível;
+- Antes de começar, vamos organizar nosso setup.
+  * Fork esse [repositório](https://github.com/reprograma/on20-tet-s9-javascript-3) 
+  * Clone o fork na sua máquina (Para isso basta abrir o seu terminal e digitar `git clone url-do-seu-repositorio-forkado`)
+  * Entre na pasta do seu repositório (Para isso basta abrir o seu terminal e digitar `cd nome-do-seu-repositorio-forkado`)
+  * Altere as pastas chamadas "nome-aluna" para o seu nome-sobrenome, estes são os únicos locais onde você deve realizar alterações 
 
-***
-### Exercícios 
-* [Exercicio para sala](https://github.com/mflilian/repo-example/tree/main/exercicios/para-sala)
-* [Exercicio para casa](https://github.com/mflilian/repo-example/tree/main/exercicios/para-casa)
+# Plano de aula
 
-### Material da aula 
+## Fase 1
+- [ ] Criar o layout seguindo o Figma disponibilizado.
+- [ ] O Input recebe o username de um usuário. Quando clicar no botão de pesquisa, caso o usuário exista dentro da base de dados da API, a aplicação deve mostrar os dados desta forma: 
+   - Exibir o avatar.
+   - Nome do usuário.
+   - Username
+   - Bio
+   - Total de seguidores
+   - Total de repositórios
 
-### Links Úteis
-- [Lorem Ipsum](https://www.lipsum.com/feed/html)
-- [Lorem Ipsum](https://www.lipsum.com/feed/html)
-- [Lorem Ipsum](https://www.lipsum.com/feed/html)
-- [Lorem Ipsum](https://www.lipsum.com/feed/html)
-
-
+**Exemplo**: 
 <p align="center">
-Desenvolvido com :purple_heart:  
+  <img src="./assets/profile.png" />
 </p>
+
+- [ ] Validar campo de texto para não entrar texto vazio
+- [ ] Limpar campo de texto depois que inserir o nome de usuária
+- [ ] A usuária deve receber um alerta se o nome de usuária não for válido 
+  
+
+**Exemplo**: 
+<p align="center">
+  <img src="./assets/not-found.png" />
+</p>
+
+
+
+## Fase 2 - Extra
+
+- [ ] Exibir todos repositórios da usuária, com as informações:
+    - Titulo
+    - Descrição
+    - Linguagem utilizada
+    - Total de estrelas
+- [ ] A página deve exibir um alerta caso a usuária pesquisada não tenha repositórios públicos  
+
+**Exemplo**: 
+<p align="center">
+  <img src="./assets/profile-repos.png" />
+</p>
+<p align="center">
+  <img src="./assets/repos-nao-encontrado.png" />
+</p>
+
+## Como vou entregar o projeto?
+- Forke o projeto, depois faça uma pasta com o seu nome ex. lilit-bandeira dentro da pasta entrega-projeto. Suba as alterações commitadas e quando finalizado, faça um Pull Request. 
+
+- Importante: Tudo bem se você não conseguir finalizar o desafio todo ou não realizar a parte Extra, o importante é realizar tudo que conseguir! Se ajudem entre si e confiem no que aprenderam 💜
+
+# Links e recursos úteis
+
+- [Layout do projeto](https://www.figma.com/file/UjuUSqwVpb7OtbWysQZffj/github-search?node-id=0%3A1)
+- [Documentação - API GitHub](https://docs.github.com/pt/rest)
 
