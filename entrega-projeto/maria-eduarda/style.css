@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+:root {
+  --primary: #ec9b69;
+  --dark: #313131;
+  --light: #ffffff;
+  --gray: #f8f8f8;
+  --silver: #7f8c8d;
+}
+
+body {
+  /* background-color: var(--gray); */
+  background-image: url("background.jpg");
+  background-size: 100%;
+}
+
+/*header*/
+
+.header {
+  background-color: var(--light);
+  display: flex;
+  width: 100%;
+  height: 66px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px;
+}
+
+#logo {
+  width: 207px;
+}
+
+.search {
+  width: 403px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--silver);
+  padding: 12px 11px;
+  margin-right: 56px;
+  border-radius: 8px;
+}
+
+.search-input {
+  width: 351px;
+  border: none;
+  outline: none;
+}
+
+.search-button {
+  width: 18px;
+  border: none;
+  background-color: var(--light);
+  cursor: pointer;
+}
+
+/*main*/
+
+#main-content {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5em;
+  padding: 20px;
+  /* height: calc(100vh - 132px); 132px é 66px do header menos 66px do footer */
+} */
+
+.card {
+  max-width: 252px;
+  margin: 3% auto;
+}
+
+.profile-img {
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+.profile-title {
+  font-size: 32px;
+  color: var(--primary);
+  margin-top: 12px;
+  text-shadow: 
+               -1px -1px 0px var(--dark), 
+               -1px 1px 0px var(--dark),                    
+                1px -1px 0px var(--dark),                  
+                1px 0px 0px var(--dark);  
+}
+
+.profile-subtitle {
+  font-size: 14px;
+  color: var(--silver);
+  margin-top: 5px;
+}
+
+.profile-description {
+  font-size: 14px;
+  color: var(--silver);
+  margin-top: 17px;
+}
+
+.profile-infos {
+  display: flex;
+  margin-top: 8px;
+}
+
+.box-icons {
+  background-color: var(--light);
+  width: 66px;
+  height: 40px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 8px;
+}
+
+.box-icons:last-child {
+    cursor: pointer;
+  margin-left: 8px;
+}
+
+.box-text {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--silver);
+}
+
+/*not found*/
+
+.not-found-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.not-found-title {
+    color: var(--primary);
+    font-size: 48px;
+}
+
+.not-found-subtitle {
+    color: var(--silver);
+    font-size: 32px;
+}
+
+.nout-found-img {
+    margin-top:60px;
+}
+
+/*repositories*/
+
+#repositories-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 70%;
+    gap: 32px;
+    margin: 50px auto;
+    height: 100%;
+}
+
+.repository {
+    width: 442px;
+    height: 148px;
+    background-color: var(--light);
+    box-shadow: 1px 1px 6px;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.repository-title {
+    font-size: 18px; 
+    color: var(--dark);
+}
+
+.repository-description {
+    font-size: 14px;
+    color: var(--silver);
+    margin-top: 15px;
+}
+
+.repository-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    right: 20px;
+}
+
+/*not-repositories*/
+
+.not-repository {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 20px;
+  font-size: 16px;
+  margin-top: 200px;
+}
+
+.not-repository-title {
+  color: var(--primary);
+      text-shadow: 
+               -1px -1px 0px var(--dark), 
+               -1px 1px 0px var(--dark),                    
+                1px -1px 0px var(--dark),                  
+                1px 0px 0px var(--dark);  
+}
+
+
+/*footer*/
+
+.footer {
+  background-color: var(--light);
+  color: var(--dark);
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+}
+
+.footer > p {
+  font-size: 14px;
+}
+
+.highlight-text {
+  font-weight: 700;
+  color: var(--primary);
+}
