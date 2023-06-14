@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+:root {
+  --primary: #EC9B69;
+  --dark: #313131;
+  --light: #FFFFFF;
+  --gray: #F8F8F8;
+  --silver: #7f8c8d;
+}
+
+body {
+  background-color: var(--gray);
+}
+
+.dark {
+  background-color: var(--dark);
+}
+
+/* header */
+
+.header {
+  background-color: var(--light);
+  display: flex;
+  width: 100%;
+  height: 66px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px;
+}
+
+#logo {
+  width: 207px;
+}
+
+
+
+#right-itens-header{
+  display: flex;
+  justify-content: right;
+}
+
+.search {
+  width: 403px;
+  height: 42px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 11px;
+  border: 1px solid var(--silver);
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+.search-input {
+  width: 351px;
+  border: none;
+  outline: none;
+}
+
+.search-button {
+  width: 18px;
+  border: none;
+  background-color: var(--light);
+  cursor: pointer;
+}
+
+.darkbutton{
+  padding: 4px;
+  border: var(--dark) 1px;
+  border-radius: 10%;
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.dark .header{
+  background-color: var(--silver);
+}
+
+.dark .search{
+  background-color: var(--light);
+}
+
+/* main */
+
+#main-content {
+  display: flex;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+@media(max-width: 600px){
+  #main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card{
+    justify-content: center;
+  }
+}
+
+/* card */
+
+.card {
+  width: 252px;
+  margin: 3% auto;
+}
+
+.profile-img {
+ width: 100%;
+ border-radius: 8px;
+}
+
+.profile-title {
+  font-size: 32px;
+  color: var(--primary);
+  margin-top: 12px;
+}
+
+
+.profile-subtitle, .profile-description, .box-text {
+  font-size: 14px;
+  color: var(--silver);
+}
+
+.profile-subtitle {
+  margin-top: 5px;
+}
+
+.profile-description {
+  margin-top: 17px;
+}
+
+.profile-infos {
+  display: flex;
+  margin-top: 8px;
+}
+
+.box-icons {
+  background-color: var(--light);
+  width: 66px;
+  height: 40px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 8px;
+}
+
+.box-icons:last-child {
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.box-text {
+  font-weight: 700;
+}
+
+/* not found */
+
+.not-found-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.not-found-title {
+  color: var(--primary);
+  font-size: 48px;
+}
+
+.not-found-subtitle {
+  color: var(--silver);
+  font-size: 32px;
+}
+
+.not-found-img {
+  margin-top: 60px;
+}
+
+/* repositories */
+
+#repositories-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 70%;
+  gap: 32px;
+  margin: 50px auto;
+  height: 100%;
+}
+
+.repository {
+  background-color: var(--light);
+  width: 442px;
+  height: 148px;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.repository-title {
+  font-size: 18px;
+  color: var(--dark);
+}
+
+.repository-description {
+  font-size: 14px;
+  color: var(--silver);
+  margin-top: 15px;
+}
+
+.repository-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  right: 20px;
+}
+
+/* no repos */
+#no-repos-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  margin-right: 315px;
+}
+
+.no-repos-title{
+  color: var(--dark);
+  font-size: 24px;
+  text-align:center;
+  margin-top: 214px;
+}
+
+/* footer */
+
+.footer {
+  background-color: var(--light);
+  color: var(--dark);
+  width: 100%;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position: absolute; */
+  bottom: 0;
+}
+
+.footer > p {
+  font-size: 14px;
+}
+
+.highlight-text {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.dark .footer{
+  background-color: var(--silver);
+}
+
+.dark .footer >p{
+  color: var(--light);
+}
+
+/* RESPONSIVIDADE */
+
+@media(max-width: 735px){
+  .search{
+    width: 200px;
+  }
+}
+
+@media(max-width: 700px){
+  #repositories-list{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+  .card{
+    width: 150px;
+  }
+
+  #logo{
+    width: 100px;
+  }
+
+  #right-itens-header{
+    margin-right: 50px;
+  }
+
+  .search{
+    width: 150px;
+  }
+
+  .darkbutton{
+    width: 40px;
+    font-size: 5px;
+  }
+
+  .search-button{
+    width: 20px;
+  }
+}
+
+@media(max-width:600px){
+  #main{
+    display: block;
+    flex-direction: column;
+  }
+}
+
+@media(max-width:470px){
+  .footer{
+    min-width: 100%;
+  }
+
+  .header{
+    min-width: 100%;
+  }
+}
+
+@media(max-width: 460px){
+  .card{
+    width: 100px;
+    margin:1rem;;
+  }
+
+  .profile-title{
+    font-size: 22px;
+  }
+}
