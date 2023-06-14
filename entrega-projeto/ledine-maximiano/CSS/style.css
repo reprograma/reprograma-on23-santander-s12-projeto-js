@@ -1,34 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 :root {
-  --primary: #EC9B69;
-  --dark: #313131;
-  --light: #FFFFFF;
-  --gray: #F8F8F8;
-  --silver: #7f8c8d;
+  --primary: #CE5959;
+  --dark: #222222;
+  --green: #D8F8B7;
+  --ligth: #FDFFF0;
+  --grey: #383838;
 }
 
 body {
-  background-color: var(--gray);
+  background-color: var(--dark);
 }
 
 /* header */
 
 .header {
-  background-color: var(--light);
+  background-color: var(--primary);
   display: flex;
   width: 100%;
   height: 66px;
   align-items: center;
   justify-content: space-between;
   padding: 13px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
 }
 
 #logo {
@@ -42,21 +44,27 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 12px 11px;
-  border: 1px solid var(--silver);
+  border: 2px solid var(--green);
   margin-right: 56px;
   border-radius: 8px;
+  background-color: var(--primary);
 }
 
 .search-input {
   width: 351px;
   border: none;
   outline: none;
+  background-color: var(--primary)
+}
+
+.search-input::placeholder {
+  color: var(--ligth);
 }
 
 .search-button {
   width: 18px;
   border: none;
-  background-color: var(--light);
+  background-color: var(--primary);
   cursor: pointer;
 }
 
@@ -65,21 +73,26 @@ body {
 #main-content {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
-  width: 100%;
+  width: 85%;
+  
 }
 
 /* card */
 
 .card {
-  width: 252px;
-  margin: 3% auto;
-
+  width: 280px;
+  height: fit-content;
+  padding: 10px;
+  border-radius: 8px;
+  margin-left: 15%;
+  margin-top: 5%;
+  background-color: var(--grey);
+  box-shadow: 10px 5px 3px rgba(0, 0, 0, 0.182);
 }
 
 .profile-img {
- width: 100%;
- border-radius: 8px;
+  width: 100%;
+  border-radius: 8px;
 }
 
 .profile-title {
@@ -88,17 +101,23 @@ body {
   margin-top: 12px;
 }
 
-.profile-subtitle, .profile-description, .box-text {
+.profile-subtitle,
+.profile-description,
+.box-text {
   font-size: 14px;
-  color: var(--silver);
+  color: var(--green);
 }
 
 .profile-subtitle {
-  margin-top: 5px;
+
+  margin-top: 2px;
 }
 
 .profile-description {
-  margin-top: 17px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 16px;
+  font-size: 16px;
 }
 
 .profile-infos {
@@ -107,7 +126,7 @@ body {
 }
 
 .box-icons {
-  background-color: var(--light);
+  background-color: var(--primary);
   width: 66px;
   height: 40px;
   padding: 4px;
@@ -115,6 +134,7 @@ body {
   align-items: center;
   justify-content: space-evenly;
   border-radius: 8px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
 }
 
 .box-icons:last-child {
@@ -126,7 +146,7 @@ body {
   font-weight: 700;
 }
 
-/* not found */
+/* not found user*/
 
 .not-found-box {
   display: flex;
@@ -150,17 +170,8 @@ body {
 
 /* repositories */
 
-#repositories-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  max-width: 70%;
-  gap: 32px;
-  margin: 50px auto;
-  height: 100%;
-}
-
 .repository {
-  background-color: var(--light);
+  background-color: var(--primary);
   width: 442px;
   height: 148px;
   border-radius: 8px;
@@ -168,8 +179,20 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  background-color: lime;
+  /* background-color: lime; */
+  margin-top: 15%;
+  box-shadow: 10px 5px rgba(0, 0, 0, 0.182);
 }
+
+#repositories-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 70%;
+  gap: 32px;
+  margin: 40px auto;
+  height: 100%;
+}
+
 
 .repository-title {
   font-size: 18px;
@@ -192,30 +215,52 @@ body {
   right: 20px;
 }
 
+
+/* not found repository */
+.not_found_repositry {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 4em;
+  margin-top: 1em;
+  width: 50%;
+}
+
+.no_repository_text {
+  color: var(--green);
+  margin-top: 2em;
+}
+
+.username{
+  color: #CE5959;
+}
+
 /* footer */
 
 .footer {
-  background-color: var(--light);
-  color: var(--dark);
-  width: 100%;
-  height: 66px;
-  display: flex;
   align-items: center;
-  justify-content: center;
-  position: fixed;
+  background-color: var(--primary);
   bottom: 0;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  width: 100%;
 }
 
 .footer>p {
+  color: var(--dark);
   font-size: 14px;
 }
 
 .creator {
-  color: var(--primary);
+  color: var(--green);
   text-decoration: none;
 }
 
 .highlight-text {
   font-weight: 700;
-  color: var(--primary)
+  color: var(--green)
 }

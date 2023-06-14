@@ -5,11 +5,11 @@ const button = document.querySelector('.search-button')
 button.addEventListener('click', (e) => {
     e.preventDefault();
     const username = input.value.trim()
-    username ? getGithubUser(username) : alert("Digite uma usuária válida")
+    username ? getGitHubUser(username) : alert("Digite uma usuária válida")
     input.value = ""
 })
 
-async function getGithubUser(username) {
+async function getGitHubUser(username) {
     try {
         const response = await fetch(`https://api.github.com/users/${username}`)
         const userData = await response.json()
@@ -73,13 +73,29 @@ async function getRepositories(username) {
     try {
         const response = await fetch(`https://api.github.com/users/${username}/repos`)
         const respositories = await response.json()
-        renderRepositoriesCard(respositories)
+
+        if (respositories.length === 0) {
+            renderRepositoriesNotFound(username)
+        } 
+        else {
+            renderRepositoriesCard(respositories)
+        }
     }
     catch (err) {
         console.error("Capturei um erro: ", err)
     }
 
 }
+
+function renderRepositoriesNotFound(username) {
+    main.innerHTML += `
+    <div class="not_found_repositry"> 
+        <h1 class="no_repository_text"> ${username} não possui repositórios publicos ainda 👻</h1>
+        <img class="not-found-img" src="/assets/notfound.png" alt="">
+    </div>
+    `
+}
+
 
 function renderRepositoriesCard(respositories) {
     const respositoriesList = document.createElement('div')
