@@ -22,11 +22,11 @@ body {
 /* header */
 
 .header {
+  align-items: center;
   background-color: var(--light);
   display: flex;
   width: 100%;
   height: 66px;
-  align-items: center;
   justify-content: space-between;
   padding: 13px;
 }
@@ -48,9 +48,9 @@ body {
 }
 
 .search-input {
-  width: 351px;
   border: none;
   outline: none;
+  width: 351px;
 }
 
 .search-button {
@@ -75,8 +75,8 @@ body {
 }
 
 .profile-img {
- width: 100%;
- border-radius: 8px;
+  border-radius: 8px;
+  width: 100%;
 }
 
 .profile-title {
@@ -168,8 +168,8 @@ body {
 }
 
 .repository-title {
-  font-size: 18px;
   color: var(--dark);
+  font-size: 18px;
 }
 
 .repository-description {
