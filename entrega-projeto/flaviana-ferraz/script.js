@@ -98,14 +98,39 @@ function renderRepositoriesCards(repositories){
             <h2 class="repository-title">${name ? name: ""}</h2>
             <p class="repository-description">${description ? description: ""}</p>
             <div class="repository-details">
-                <p class="repository-text">${language}</p>
+                <p class="repository-text" id="language"><img src="" id="img-language">${language ? language:""}</p>
                 <p class="repository-text">
                 <img src="/assets/star.png">${stargazers_count}</p>
             </div>
         </div>
         `
     })
+
+    // imgLanguageRepresent();
 }
+
+// function imgLanguageRepresent( ){
+//     let imgLanguage = document.getElementById('img-language');
+//     let lang = document.getElementById('language');
+//     let repositories = document.getElementById('repositories-list');
+//     const linguagens = ['JavaScript', 'CSS', 'HTML'];
+//     repositories.map(() => {
+//         if(lang === linguagens[0]){
+//             imgLanguage.src ="./assets/js_ball.jpg"
+//         } else if(lang === linguagens[1]){
+//             imgLanguage.src = "./assets/css_ball.jpg"
+//         } else if(lang === linguagens[2]){
+//             imgLanguage.src ="./assets/html_ball.jpg"
+//         }else{
+//             imgLanguage.src ="./assets/sem_ling.jpg"
+//         }  
+//     })
+// }
+
+function darkMode(){
+    document.body.classList.toggle("dark");
+}
+    
 
 
 
