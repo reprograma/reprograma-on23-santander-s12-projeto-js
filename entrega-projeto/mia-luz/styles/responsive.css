@@ -1,0 +1,52 @@
+@media screen and (max-width: 800px){
+    /* .header__form{
+        width: 40%;
+    } */
+}
+
+@media screen and (max-width: 720px){
+
+    .header__logo{
+        width: 30%;
+    }
+    .main__container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+
+    }
+    .user-card__container{
+        width: 50%;
+
+    }
+    .repos__container {
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 550px){
+    .form__input{
+        font-size: .7rem;
+    }
+
+    .repos__container {
+        width: 80%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .repos__repo-name{
+        font-size: 1rem;
+    }
+    .repos__repo-description{
+        font-size: .9rem;
+        
+    }
+    .user-card__name h2 {
+        font-size: 1.5rem;
+    }
+
+    .not-found__container{
+        width: 90%;
+    }
+}
