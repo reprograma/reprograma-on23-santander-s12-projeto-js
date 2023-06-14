@@ -22,7 +22,7 @@ body {
 /* header */
 
 .header {
-  background-color: var(--light);
+  background-color: var(--dark);
   display: flex;
   width: 100%;
   height: 66px;
@@ -209,4 +209,7 @@ body {
 .highlight-text {
   font-weight: 700;
   color: var(--primary)
+}
+#gato{
+  width: 50px;
 }
