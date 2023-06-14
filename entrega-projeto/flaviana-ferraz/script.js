@@ -111,26 +111,27 @@ function renderRepositoriesCards(repositories){
 
 // function imgLanguageRepresent( ){
 //     let imgLanguage = document.getElementById('img-language');
-//     let lang = document.getElementById('language');
-//     let repositories = document.getElementById('repositories-list');
-//     const linguagens = ['JavaScript', 'CSS', 'HTML'];
-//     repositories.map(() => {
-//         if(lang === linguagens[0]){
+//     let language = document.getElementById('language');
+//     // let repositories = document.getElementById('repositories-list');
+//     const linguagens = ["JavaScript", "CSS", "HTML"];
+    
+//     for (const lang of language) {
+//         if(lang == linguagens[0]){
 //             imgLanguage.src ="./assets/js_ball.jpg"
-//         } else if(lang === linguagens[1]){
+//         } else if(lang == linguagens[1]){
 //             imgLanguage.src = "./assets/css_ball.jpg"
-//         } else if(lang === linguagens[2]){
+//         } else if(lang == linguagens[2]){
 //             imgLanguage.src ="./assets/html_ball.jpg"
 //         }else{
 //             imgLanguage.src ="./assets/sem_ling.jpg"
-//         }  
-//     })
+//         }      
+//     }
 // }
 
 function darkMode(){
     document.body.classList.toggle("dark");
+    // let button = document.getElementById('darkbutton');
+    // button.innerHTML = `
+    // <button onClick="returnLightMode()"id='light-mode'>Light Mode</button>
+    // `
 }
-    
-
-
-

@@ -39,6 +39,13 @@ body {
   width: 207px;
 }
 
+
+
+#right-itens-header{
+  display: flex;
+  justify-content: right;
+}
+
 .search {
   width: 403px;
   height: 42px;
@@ -47,7 +54,7 @@ body {
   align-items: center;
   padding: 12px 11px;
   border: 1px solid var(--silver);
-  margin-right: 56px;
+  margin-right: 20px;
   border-radius: 8px;
 }
 
@@ -88,6 +95,18 @@ body {
   min-height: 80vh;
 }
 
+@media(max-width: 600px){
+  #main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card{
+    justify-content: center;
+  }
+}
+
 /* card */
 
 .card {
@@ -105,6 +124,7 @@ body {
   color: var(--primary);
   margin-top: 12px;
 }
+
 
 .profile-subtitle, .profile-description, .box-text {
   font-size: 14px;
@@ -253,4 +273,72 @@ body {
 
 .dark .footer >p{
   color: var(--light);
+}
+
+/* RESPONSIVIDADE */
+
+@media(max-width: 735px){
+  .search{
+    width: 200px;
+  }
+}
+
+@media(max-width: 700px){
+  #repositories-list{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+  .card{
+    width: 150px;
+  }
+
+  #logo{
+    width: 100px;
+  }
+
+  #right-itens-header{
+    margin-right: 50px;
+  }
+
+  .search{
+    width: 150px;
+  }
+
+  .darkbutton{
+    width: 40px;
+    font-size: 5px;
+  }
+
+  .search-button{
+    width: 20px;
+  }
+}
+
+@media(max-width:600px){
+  #main{
+    display: block;
+    flex-direction: column;
+  }
+}
+
+@media(max-width:470px){
+  .footer{
+    min-width: 100%;
+  }
+
+  .header{
+    min-width: 100%;
+  }
+}
+
+@media(max-width: 460px){
+  .card{
+    width: 100px;
+    margin:1rem;;
+  }
+
+  .profile-title{
+    font-size: 22px;
+  }
 }
