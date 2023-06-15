@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand' sans-serif;
+}
+
+:root {
+    --primary: #EC9B69;
+    --dark: #313131;
+    --ligth: #FFFFFF;
+    --gray: #F8F8F8;
+    --silver: #7f8c8d;
+}
+
+body {
+    background-color: var(--gray);
+
+}
+
+/*header*/
+
+header {
+    align-items: center;
+    background-color: var(--ligth);
+    display: flex;
+    height: 66px;
+    justify-content: space-between;
+    padding: 13px;
+    width: 100%;
+}
+
+#logo {
+    width: 207px;
+}
+
+.search {
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid var(--silver);
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 11px;
+    width: 403px;
+    height: 42px;
+    margin-right: 56px;
+
+}
+
+.search-input {
+    width: 351px;
+    border: none;
+    outline: none;
+}
+
+.search-button {
+    border: none;
+    background-color: var(--ligth);
+    width: 18px;
+    cursor: pointer;
+}
+
+/* main */
+
+#main-content {
+    display: flex;
+    justify-content: center;
+
+    min-height: 100vh;
+    position: relative;
+}
+
+/* card */
+
+.card {
+    width: 252px;
+    margin: 3% auto;
+}
+
+.profile-img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.profile-title {
+    font-size: 32px;
+    color: var(--primary);
+    margin-top: 12px;
+}
+
+.profile-subtitle,
+.profile-description,
+.box-text {
+    font-size: 14px;
+    color: var(--silver);
+}
+
+.profile-subtitle {
+    margin-top: 5px;
+}
+
+.profile-description {
+    margin-top: 17px;
+}
+
+.profile-infos {
+    display: flex;
+    margin-top: 8px;
+}
+
+.box-icons {
+    display: flex;
+    background-color: var(--ligth);
+    width: 66px;
+    height: 40px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 4px;
+
+}
+
+.box-icons:last-child {
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.box-text {
+    font-weight: 700;
+}
+
+/* not found */
+
+.not-found-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.not-found-title {
+    color: var(--primary);
+    font-size: 48px;
+}
+
+.not-found-subtitle {
+    color: var(--silver);
+    font-size: 32px;
+}
+
+.not-found-img {
+    margin-top: 60px;
+}
+
+/* repositories */
+
+#repositories-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 70%;
+    margin: 50px auto;
+    height: 100%;
+    gap: 32px;
+}
+
+.repository {
+    width: 442px;
+    height: 148px;
+    background-color: var(--ligth);
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.repository-title {
+    font-size: 18px;
+    color: var(--dark);
+}
+
+.repository-description {
+    font-size: 14px;
+    color: var(--silver);
+    margin-top: 15px;
+}
+
+.repsotory-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    right: 20px;
+    font-weight: 700;
+}
+
+/* footer */
+
+.footer {
+    background-color: var(--ligth);
+    color: var(--dark);
+    width: 100%;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+}
+
+.footer > p {
+    font-size: 14px;
+}
+
+.highlight-text {
+    font-weight: 700;
+    color: var(--primary);
+}
