@@ -2,6 +2,7 @@ const main = document.getElementById('main-content')
 const input = document.querySelector('.search-input')
 const button = document.querySelector('.search-button')
 
+
 button.addEventListener('click', (e) => {
     e.preventDefault();
     const username = input.value.trim()
@@ -110,3 +111,10 @@ function renderRepositoriesNotFound(username) {
     </div>
     `
 }
+
+const darkModeButton = document.getElementById('dark-mode-button')
+const body = document.body;
+
+darkModeButton.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+});

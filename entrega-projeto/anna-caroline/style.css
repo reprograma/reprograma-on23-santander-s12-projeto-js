@@ -36,14 +36,14 @@ header {
 }
 
 .search {
-    width: 403px;
+    width: 303px;
     height: 42px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 12px 11px;
     border: 1px solid var(--silver);
-    margin-right: 56px;
+    margin-right: 2;
     border-radius: 8px;
 }
 
@@ -51,6 +51,8 @@ header {
     width: 351px;
     outline: none;
     border: none;
+    background-color: transparent;
+    color:var(--dsilver)
     
 }
 
@@ -71,6 +73,11 @@ header {
 
 /* main */
 
+.mascote-github {
+    padding-top: 5rem;
+    width: 30rem;
+}
+
 #main-content {
     display: flex;
     justify-content: center;
@@ -80,12 +87,17 @@ header {
 
 .card {
     width: 252px;
-    padding-left: 4rem;
+    padding-left: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
 }
 
 .profile-img {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 20px;
+    border-right: 3px solid var(--primary);
+    border-bottom: 3px solid var(--primary);
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
 }
 
 .profile-title{
@@ -122,6 +134,7 @@ header {
     align-items: center;
     justify-content: space-evenly;
     border-radius: 8px;
+    background-color: transparent;
 }
 
 .box-icons:last-child {
@@ -139,6 +152,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 2rem;
 }
 
 .not-found-title {
@@ -205,12 +219,12 @@ header {
 
 .no-repository {
     display: flex;
-    justify-content: center;
-    background-color: var(--gray);
+    /* justify-content: center; */
+    align-items: flex-start;
+    padding-left: 10rem;
     height: calc(100vh - 132px);
     width: 65rem;
-    padding-top: 10rem;
-    border-radius: 10px;
+    padding-top: 10rem; 
 }
 
 .no-repository-title {
@@ -233,4 +247,43 @@ header {
     bottom: 0;
     width: 100%;
     height: 66px;
+}
+
+ /* Dark-mode */
+ .dark-mode {
+    --primary: #FFA500; 
+    --ddark: #202125; /* Cor de fundo para o modo escuro */
+    --dlight: #333333; /* Cor de texto para o modo escuro */
+    --dgray: #e6e6e6e5; 
+    --dsilver: #999999; /* Cor de texto secundária para o modo escuro */
+
+}
+
+body.dark-mode {
+    background-color: var(--ddark);
+}
+
+body.dark-mode header {
+    background-color: var(--ddark);
+}
+
+#dark-mode-button {
+    border: none; 
+    background-color: transparent;   
+    
+}
+body.dark-mode footer {
+    background-color: var(--ddark);
+}
+
+body.dark-mode footer>p {
+    color: var(--dsilver);
+}
+
+body.dark-mode .repository {
+    background-color: var(--dlight);
+}
+
+body.dark-mode .repository-title {
+    color: var(--dsilver);
 }
