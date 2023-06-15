@@ -17,7 +17,7 @@
 
 body {
     background-color: var(--gray);
-    position: relative;
+    position:relative;
 }
 
 
@@ -67,8 +67,9 @@ body {
 display: flex;
 justify-content: center;
 position: relative;
-min-height: 100vh;
+min-height: 95vh;
 margin-top: auto;
+background-color: hsla(23, 78%, 67%, 0.367);
 }
 
 /* card */
@@ -85,7 +86,7 @@ margin-top: auto;
 
 .profile-title {
   font-size: 32px;
-  color: var(--primary);
+  color: var(--dark);
   margin-top: 12px;
 }
 
@@ -108,7 +109,7 @@ margin-top: auto;
 }
 
 .box-icons {
-  background-color: var(--light);
+  background-color: var(--dark);
   width: 66px;
   height: 40px;
   padding: 4px;
@@ -198,7 +199,7 @@ margin-top: auto;
   background-color: var(--light);
   color: var(--dark);
   width: 100%;
-  height: 30px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -220,11 +221,21 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-margin-right: 30%;
+margin-right: 23%;
 }
   
 .not-found-user {
-color: var(--silver);
+color: var(--dark);
 font-size: 35px;
 }
+
+#modeToggle{
+  padding: 10px;
+  background: radial-gradient(hwb(30 71% 21%), #0b0b0b);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  margin-left:15px;
+  font-weight: 500;}
 

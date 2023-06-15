@@ -87,7 +87,7 @@ async function getRepositories(username) {
 function renderRepositoriesNull(username){
     main.innerHTML += `
     <div class ="not-reposit-box">
-    <h3 class = "not-found-user"> O usuário ${username} ainda não possui repôs públicos!✖ </h3>
+    <h3 class = "not-found-user"> O usuário ${username} ainda não possui repôs públicos! ✖</h3>
     </div>`
 }
 
@@ -113,7 +113,7 @@ function renderRepositoriesCards(repositories) {
     `
   })
 }
-
+//botão modo noturno//
 const modeToggle = document.getElementById('modeToggle');
 const body = document.body;
 
@@ -121,7 +121,7 @@ modeToggle.addEventListener('click', toggleMode);
 
 function toggleMode() {
   body.classList.toggle('dark-mode');
-  const currentMode = body.classList.contains('dark-mode') ? 'Modo Diurno' : 'Modo Noturno';
+  const currentMode = body.classList.contains('dark-mode') ? 'Modo Diurno ☀' : 'Modo Noturno 🌙';
   modeToggle.textContent = currentMode;
 
 }
