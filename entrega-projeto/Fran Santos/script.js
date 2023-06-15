@@ -1,7 +1,7 @@
 const main = document.getElementById('main-content')
 const input = document.querySelector('.search-input')
 const button = document.querySelector('.search-button')
-
+const repositoriesList = document.createElement('div')
 button.addEventListener('click', (e) => {
     e.preventDefault();
     const userName = input.value.trim()
@@ -32,7 +32,7 @@ function renderUserCard(user) {
 
     main.innerHTML = ` 
     <div class="card">
-    <a href=${html_url}> 
+    <a href=${html_url} target="_blank"> 
     <img class="profile-img" src=${avatar_url} alt="Foto do usuário do GitHub">
     <a/>
    <h2 class="profile-title">${name}<h2/>
@@ -76,9 +76,9 @@ async function getRepositories(userName) {
         const response = await fetch(`https://api.github.com/users/${userName}/repos`)
         const repositories = await response.json()
 
-        if(repositories.length === 0){
+        if (repositories.length === 0) {
             renderRepositoriesPublic(userName)
-        } else{
+        } else {
             renderRepositoriesCards(repositories)
         }
 
@@ -89,11 +89,11 @@ async function getRepositories(userName) {
 
 
 function renderRepositoriesCards(repositories) {
-   
-    const repositoriesList = document.createElement('div')
+
     repositoriesList.setAttribute('id', 'repositories-list')
     main.appendChild(repositoriesList)
- 
+
+    repositoriesList.innerHTML = ""
     repositories.map((repository) => {
 
         const { name, description, language, stargazers_count } = repository
@@ -113,9 +113,9 @@ function renderRepositoriesCards(repositories) {
 
 
 function renderRepositoriesPublic(userName) {
- main.innerHTML += `
+    main.innerHTML += `
     <div class="no-repository">
       <h3 class="no-repository-title">${userName} não possui repositórios públicos<h3/>
     <div/>
-         ` 
+         `
 }
