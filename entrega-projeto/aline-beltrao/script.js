@@ -19,8 +19,8 @@ async function getGitHubUser(username) {
       renderUserCard(userData)
     }
   }
-  catch(err) {
-    console.error("Capturei um erro: ",err)
+  catch(error) {
+    console.error("Capturei um erro: ",error)
   }
 }
 
@@ -58,7 +58,7 @@ function renderUserNotFound() {
     <div class='not-found-box'>
       <h1 class='not-found-title'>404 - Usuária não encontrada 😖</h1>
       <h3 class='not-found-subtitle'>Pesquise novamente</h3>
-      <img class='not-found-img' src='../assets/notfound.png'>
+      <img class='not-found-img' src='../../assets/notfound.png'>
     </div>
   `
 }
@@ -67,7 +67,11 @@ async function getRepositories(username) {
   try {
     const response = await fetch(`https://api.github.com/users/${username}/repos`)
     const repositories = await response.json()
-    renderRepositoriesCards(repositories)
+    if (repositories.length === 0) {
+      alert('Esta usuária não possui repositórios públicos.')
+    } else{
+      renderRepositoriesCards(repositories)
+    }
   }
   catch(erro) {
     console.error("Capturei um erro: ", erro)
@@ -88,7 +92,7 @@ function renderRepositoriesCards(repositories) {
         <div class='repository-details'>
           <p class='repository-text'>${language}</p>
           <p class='repository-text'>
-            <img src='../assets/star.png'>
+            <img src='../../assets/star.png'>
             ${stargazers_count}
           </p>
         </div>
@@ -99,7 +103,7 @@ function renderRepositoriesCards(repositories) {
 
 
 /* PARA CASA:
- - A página deve exibir um alerta caso a usuária pesquisada não tenha repositórios públicos;
+ X A página deve exibir um alerta caso a usuária pesquisada não tenha repositórios públicos;
  - Resolver bug de quando clica 2 vezes no botão de repositórios;
  - Resolver os campos que aparecer null, para que não aparecer;
  - Click na imagem da usuária para levar ao repositório
