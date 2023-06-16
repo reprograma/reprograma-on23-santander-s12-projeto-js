@@ -121,10 +121,25 @@ modeToggle.addEventListener('click', toggleMode);
 
 function toggleMode() {
   body.classList.toggle('dark-mode');
-  const currentMode = body.classList.contains('dark-mode') ? 'Modo Diurno ☀' : 'Modo Noturno 🌙';
-  modeToggle.textContent = currentMode;
+  const currentM = body.classList.contains('dark-mode') ? 'Modo Diurno 🌞' : 'Modo Noturno 🌙';
+  modeToggle.textContent = currentM;
 
+  if (body.classList.contains('dark-mode')) {
+    document.documentElement.style.setProperty('--primary', '#EC9B69');
+    document.documentElement.style.setProperty('--dark', '#fffff');
+    document.documentElement.style.setProperty('--light', '#fffff');
+    document.documentElement.style.setProperty('--gray', '#fffff');
+    document.documentElement.style.setProperty('--silver', '#1c1631');
+  } else {
+    document.documentElement.style.removeProperty('--primary');
+    document.documentElement.style.removeProperty('--dark');
+    document.documentElement.style.removeProperty('--light');
+    document.documentElement.style.removeProperty('--gray');
+    document.documentElement.style.removeProperty('--silver');
+  }
 }
+
+
 
 
 /* PARA CASA:
