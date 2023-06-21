@@ -34,11 +34,11 @@ function renderUserCard(user) {
       <p class="profile-description">${bio}</p>
         <div class="profile-infos">
           <div class="box-icons">
-            <img src="../../assets/people_outline.png" class="box-img">
+            <img src="./assets/people_outline.png" class="box-img">
             <p class="box-text">${followers}</p>
           </div>
           <div id="repo-button" class="box-icons">
-            <img src="../../assets/Vector.png" class="box-img">
+            <img src="./assets/Vector.png" class="box-img">
             <p class="box-text">${public_repos}</p>
           </div>
         </div>
@@ -73,7 +73,7 @@ function renderUserNotFound() {
     <div class="not-found-box">
       <h2 class="not-found-title">404: Usuário(a) não encontrado(a) :(</h2>
       <h3 class="not-found-subtitle">Pesquise novamente</h3>
-      <img class="not-found-img" src="../../assets/notfound.png" alt="imagem informando que usuário(a) não foi encontrado(a)">
+      <img class="not-found-img" src="./assets/notfound.png" alt="imagem informando que usuário(a) não foi encontrado(a)">
     </div>
   `
 }
@@ -102,10 +102,10 @@ function renderRepositoriesCards(repositories) {
         <h2 class="repository-title">${name}</h2>
         <p class="repository-description">${description ? description : 'Repositório sem descrição.'}</p>
         <div class="repository-details">
-          <p class="repository-text">${language ? language : 'Linguagem/tecnologia não informada'}
+          <p class="repository-text">${language ? language : ''}
           </p>
           <p class="repository-text">
-            <img src="../../assets/star.png" alt="imagem de uma estrela">${stargazers_count}
+            <img src="./assets/star.png" alt="imagem de uma estrela">${stargazers_count}
           </p>
         </div>
       </div>

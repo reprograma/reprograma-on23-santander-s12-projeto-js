@@ -8,15 +8,15 @@
 }
 
 :root {
-  --primary: #EC9B69;
-  --dark: #313131;
+  --primary: #f1731f;
+  --purple: #730662;
   --light: #FFFFFF;
-  --gray: #F8F8F8;
-  --silver: #7f8c8d;
+  --orange-light: #eeccbb;
+  --red: #bd0d59;
 }
 
 body {
-  background-color: var(--gray);
+  background-color: var(--orange-light);
 }
 
 /* header */
@@ -42,7 +42,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 12px 11px;
-  border: 1px solid var(--silver);
+  border: 1px solid var(--red);
   margin-right: 56px;
   border-radius: 8px;
 }
@@ -75,9 +75,9 @@ body {
 }
 
 .profile-img {
- width: 100%;
- border-radius: 8px;
- cursor: pointer;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 .profile-title {
@@ -86,9 +86,11 @@ body {
   margin-top: 12px;
 }
 
-.profile-subtitle, .profile-description, .box-text {
+.profile-subtitle,
+.profile-description,
+.box-text {
   font-size: 14px;
-  color: var(--silver);
+  color: var(--red);
 }
 
 .profile-subtitle {
@@ -138,7 +140,7 @@ body {
 }
 
 .not-found-subtitle {
-  color: var(--silver);
+  color: var(--red);
   font-size: 32px;
 }
 
@@ -153,7 +155,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   max-width: 70%;
   gap: 32px;
-  margin: 50px auto;
+  margin: 5em auto;
   height: 100%;
   margin-bottom: 5em;
 }
@@ -171,12 +173,12 @@ body {
 
 .repository-title {
   font-size: 18px;
-  color: var(--dark);
+  color: var(--purple);
 }
 
 .repository-description {
   font-size: 14px;
-  color: var(--silver);
+  color: var(--red);
   margin-top: 15px;
 }
 
@@ -200,7 +202,7 @@ body {
 
 .footer {
   background-color: var(--light);
-  color: var(--dark);
+  color: var(--purple);
   width: 100%;
   height: 66px;
   display: flex;
@@ -210,11 +212,59 @@ body {
   bottom: 0;
 }
 
-.footer > p {
+.footer>p {
   font-size: 14px;
 }
 
 .highlight-text {
   font-weight: 700;
   color: var(--primary)
+}
+
+/*Responsividade:*/
+
+@media (max-width: 1270px) {
+
+  #repositories-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 800px) {
+
+  #main-content {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 730px) {
+
+  .header {
+    flex-direction: column;
+    height: 10em;
+    justify-content: space-around;
+  }
+
+  .search {
+    margin-right: 0;
+    width: 80%;
+  }
+
+  #repositories-list {
+    max-width: none;
+  }
+
+  .repository {
+    width: 20em;
+    height: 10em;
+  }
+}
+
+@media (max-width: 320px) {
+  
+  .repository {
+    width: 15em;
+    height: 15em;
+  }
 }
