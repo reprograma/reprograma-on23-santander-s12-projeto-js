@@ -5,24 +5,20 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Quicksand', sans-serif;
+  background-size: 100%;
 }
 
 :root {
-  --primary: #EC9B69;
+  --primary: #020101;
   --dark: #313131;
   --light: #FFFFFF;
   --gray: #F8F8F8;
   --silver: #7f8c8d;
 }
 
-body {
-  background-color: var(--gray);
-}
-
 /* header */
 
 .header {
-  background-color: var(--light);
   display: flex;
   width: 100%;
   height: 66px;
@@ -32,7 +28,8 @@ body {
 }
 
 #logo {
-  width: 207px;
+  width: 350px;
+  
 }
 
 .search {
@@ -51,20 +48,26 @@ body {
   width: 351px;
   border: none;
   outline: none;
+  background: none;
+  font-weight: bold
 }
 
 .search-button {
   width: 18px;
   border: none;
-  background-color: var(--light);
+  background: local;
   cursor: pointer;
 }
 
 /* main */
 
 #main-content {
-  display: flex;
-  justify-content: center;
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-content: center;
+  text-align: center;
+  width: 1200px;
 }
 
 /* card */
@@ -72,6 +75,7 @@ body {
 .card {
   width: 252px;
   margin: 3% auto;
+  align-items: center;
 }
 
 .profile-img {
@@ -100,6 +104,7 @@ body {
 
 .profile-infos {
   display: flex;
+  justify-content: center;
   margin-top: 8px;
 }
 
@@ -191,7 +196,6 @@ body {
 /* footer */
 
 .footer {
-  background-color: var(--light);
   color: var(--dark);
   width: 100%;
   height: 66px;
@@ -200,13 +204,24 @@ body {
   justify-content: center;
   position: absolute;
   bottom: 0;
+  position: fixed;
 }
 
 .footer > p {
   font-size: 14px;
+  background: none;
 }
 
 .highlight-text {
   font-weight: 700;
   color: var(--primary)
 }
+
+.no-repository {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  font-size: 25px;
+}
+
+

@@ -68,11 +68,10 @@ async function getRepositories(username) {
   try {
     const response = await fetch(`https://api.github.com/users/${username}/repos`)
     const repositories = await response.json()
-    if (repositories.length) {
-        renderRepositoriesCards(repositories)
+    if (repositories.length === 0) {
+        renderRepositoriesPublic(username)
     } else {
-        alert('A usuária não possui repositórios públicos.')
-        
+        renderRepositoriesCards(repositories)
     }
     
   }
@@ -104,6 +103,14 @@ function renderRepositoriesCards(repositories) {
     `
   })
 }
+
+function renderRepositoriesPublic(userName) {
+    main.innerHTML += `
+       <div class="no-repository">
+         <h5 class="no-repository-title">${userName} não possui repositórios públicos<h5/>
+       <div/>
+            ` 
+   }
 
 
 /* PARA CASA:
